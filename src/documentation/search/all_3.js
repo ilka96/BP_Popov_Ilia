@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['g_5fent_5fglove_5fwin_5fthumbrot',['g_ent_glove_win_thumbRot',['../structapp__widgets.html#a4a56d25a7cf4deb24b99fdbf4431e2bb',1,'app_widgets']]],
+  ['g_5fent_5fglove_5fwin_5ftxtin',['g_ent_glove_win_txtIn',['../structapp__widgets.html#af1591b16e0d3a98767c6817ea00a0200',1,'app_widgets']]],
+  ['g_5fent_5fsend_5fwin_5ff',['g_ent_send_win_f',['../structapp__widgets.html#a75556319640cce739237a93976cb24f0',1,'app_widgets']]],
+  ['g_5fent_5fsend_5fwin_5ftextin',['g_ent_send_win_textIn',['../structapp__widgets.html#a9dd2446020c20b47088dee683ab16a7a',1,'app_widgets']]],
+  ['g_5fent_5fstand_5fwin_5ftextin',['g_ent_stand_win_textIn',['../structapp__widgets.html#a98f184588d2e9227c97ddddee28ea4a7',1,'app_widgets']]],
+  ['g_5fglove_5fwindow',['g_glove_window',['../structapp__widgets.html#adf8eb7731489345e4a43f025e5feebeb',1,'app_widgets']]],
+  ['g_5flbl_5fglove_5fwin_5fconn_5fstate_5fglove',['g_lbl_glove_win_conn_state_glove',['../structapp__widgets.html#a2b930d8c2a179b4ea3b3718465b92a95',1,'app_widgets']]],
+  ['g_5flbl_5fglove_5fwin_5fconn_5fstate_5fhand',['g_lbl_glove_win_conn_state_hand',['../structapp__widgets.html#ae69936d9006d0f2c50e7d3d9a7e2cb62',1,'app_widgets']]],
+  ['g_5flbl_5fglove_5fwin_5ff',['g_lbl_glove_win_f',['../structapp__widgets.html#a0270db690d9b851610e59dfd64895b72',1,'app_widgets']]],
+  ['g_5flbl_5fglove_5fwin_5fhand_5fdata',['g_lbl_glove_win_hand_data',['../structapp__widgets.html#a3d549deb4473bdc96d4dfb7163644578',1,'app_widgets']]],
+  ['g_5flbl_5fsend_5fwin_5fconn_5fstate_5fhand',['g_lbl_send_win_conn_state_hand',['../structapp__widgets.html#ad503b5ee98864c8f5c28ed1e9a2e714a',1,'app_widgets']]],
+  ['g_5flbl_5fsend_5fwin_5fhand_5fdata',['g_lbl_send_win_hand_data',['../structapp__widgets.html#a255daf4e942e6ce65014d543b40f0671',1,'app_widgets']]],
+  ['g_5flbl_5fstand_5fwin_5fconn_5fstate_5fhand',['g_lbl_stand_win_conn_state_hand',['../structapp__widgets.html#a857515134665857eff12c4407c13c31b',1,'app_widgets']]],
+  ['g_5flbl_5fstand_5fwin_5fhand_5fdata',['g_lbl_stand_win_hand_data',['../structapp__widgets.html#a04ba914f71b2448723c022ad22fe21a6',1,'app_widgets']]],
+  ['g_5fmenu_5fwindow',['g_menu_window',['../structapp__widgets.html#ae17bf926587e5e94f9fd8dbc6860287a',1,'app_widgets']]],
+  ['g_5fsend_5fstates_5fwindow',['g_send_states_window',['../structapp__widgets.html#ab1f0ec65d42c944bc81a0acbda02da7c',1,'app_widgets']]],
+  ['g_5fstand_5fwindow',['g_stand_window',['../structapp__widgets.html#a90f44e0245e4a9e04c554b3da8b734f9',1,'app_widgets']]],
+  ['glove',['glove',['../structapp__widgets.html#af1892c0c13802eda5d7c3653c8affa5b',1,'app_widgets']]],
+  ['glove_5fstatus',['glove_status',['../structapp__widgets.html#a6c801cd25ab80cd7ce04d046263ed28a',1,'app_widgets']]]
+];

@@ -1,0 +1,19 @@
+digraph "chkbtn_use"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node8 [label="chkbtn_use",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="on_chkbtn_states_screen\l_1_toggled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a611bf74fe97a465fc48b6fd8dfbf68fa",tooltip="Controll checkbox. "];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="on_chkbtn_states_screen\l_2_toggled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#ac6cc0d21f881456510733a0d0ad24ea6"];
+  Node8 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="on_chkbtn_states_screen\l_3_toggled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a2eeb66134a18f7fd7132526ede02b1e3"];
+  Node8 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="on_chkbtn_states_screen\l_4_toggled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a0e5c049ccb976e456eb6b148eab95196"];
+  Node8 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="on_chkbtn_states_screen\l_5_toggled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a1c24838dc062f2f9323605b42454c0db"];
+  Node8 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="on_chkbtn_states_screen\l_6_toggled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a8ce6330db71db06ac96a35902befb01b"];
+}

@@ -1,0 +1,15 @@
+digraph "read_glove_position"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node38 [label="read_glove_position",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node38 -> Node39 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node39 [label="resend_data_from_glove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a001a1c13994c5a22528f1f7573a6616f",tooltip="Resends data from glove controller to robotic hand. "];
+  Node39 -> Node40 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node40 [label="on_btn_glove_win_start\l_resend_data_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a77674c6081bf8345eef8ecb37bc9dd9b",tooltip="Starts/stops resending data from glove to hand after cliking on button. "];
+  Node38 -> Node41 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node41 [label="read_and_display_data\l_from_glove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#af097ecc2dc18e3f70eeb8c0e2ffe0aab",tooltip="Read fingers positions from glove. "];
+  Node41 -> Node42 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node42 [label="on_btn_glove_win_read\l_glove_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a99511eda2dbf3c756613536ee8a8383c",tooltip="Starts/stops reading data from glove after cliking on button. "];
+}

@@ -1,0 +1,67 @@
+\begin{thebibliography}{10}
+\providecommand{\biburl}[1]{\url{#1}}
+\providecommand{\urlprefix}{Dostupn{\' e} z: }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\biburl{#2}}
+
+\bibitem{youBionPic}
+You Bionic: \emph{Technical Drawing}. [cit. 2019-02-19].
+\urlprefix\biburl{https://github.com/Youbionic-com/Youbionic}
+
+\bibitem{ardMicr}
+arduino.cc: \emph{Arduino Micro {[online]}}. [cit. 2019-04-10].
+\urlprefix\biburl{https://store.arduino.cc/arduino-micro}
+
+\bibitem{ardServoMan}
+Martin, S.: \emph{Servomotor}. [cit. 2019-02-17].
+\urlprefix\biburl{https://navody.arduino-shop.cz/arduino-projekty/servo-motor.html}
+
+\bibitem{servo}
+Actuonix Motion Devices Inc.: \emph{Miniature Linear Motion Series PQ12}. [cit.
+  2019-04-10].
+\urlprefix\biburl{https://s3.amazonaws.com/actuonix/Actuonix+PQ12+Datasheet.pdf}
+
+\bibitem{drvBr}
+Texas Instruments: \emph{RV8835 Dual Low-Voltage H-Bridge IC}. [cit.
+  2019-04-06].
+\urlprefix\biburl{https://www.pololu.com/file/0J570/drv8835.pdf}
+
+\bibitem{MusSensDoc}
+Advancer Technologies: \emph{Electromyography Sensor for Microcontroller
+  Applications}. [cit. 2019-02-14].
+\urlprefix\biburl{https://cdn.sparkfun.com/assets/a/3/a/f/a/AT-04-001.pdf}
+
+\bibitem{PhysJoin}
+Kapandji, I.~A.: \emph{The Physiology of the Joints, Volume 1: Upper Limb}.
+  Eksmo, 6 vyd\'an\'\i{}, 2018, ISBN 978-5-699-33140-6.
+
+\bibitem{PotenPosit}
+Position Sensors. \emph{Electronics Tutorials {[online]}}, [cit. 2020-03-01].
+\urlprefix\biburl{https://www.electronics-tutorials.ws/io/io_2.html}
+
+\bibitem{spiAtm}
+Atmel Corporation: \emph{AVR151: Setup and Use of the SPI}. [cit. 2020-02-07].
+\urlprefix\biburl{https://ww1.microchip.com/downloads/en/AppNotes/Atmel-2585-Setup-and-Use-of-the-SPI_ApplicationNote_AVR151.pdf}
+
+\bibitem{contrSyst}
+Joseph J.~Distefano, W. J.~W., Allen R.~Stubberud: \emph{Feedback and control
+  systems}. McGraw-Hill, druh\'e vyd\'an\'\i{}, 1994, ISBN 978-0078427091.
+
+\bibitem{termLib}
+The Open Group: \emph{termios.h}. [cit. 2019-11-20].
+\urlprefix\biburl{https://pubs.opengroup.org/onlinepubs/7908799/xsh/termios.h.html}
+
+\bibitem{flexSens}
+Flex Sensor introduction, pinouts and working. \emph{Microcontrollerslab.com
+  {[online]}}, [cit. 2019-09-07].
+\urlprefix\biburl{https://microcontrollerslab.com/flex-sensor-introduction-working/}
+
+\bibitem{gladePr}
+The Glade project: \emph{Glade - A User Interface Designer}. [cit. 2020-04-14].
+\urlprefix\biburl{https://glade.gnome.org/}
+
+\end{thebibliography}

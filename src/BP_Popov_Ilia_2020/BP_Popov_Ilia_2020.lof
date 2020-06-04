@@ -1,0 +1,41 @@
+\select@language {czech}
+\select@language {czech}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Youbionic Hand. Převzato z \cite {youBionPic}.\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Originální schéma zapojení. Převzato z \cite {youBionPic}.\relax }}{7}{figure.caption.7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Arduino IDE\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Arduino Micro\relax }}{9}{figure.caption.10}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Komunikace komponent robotické ruky\relax }}{18}{figure.caption.16}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces SPI komunikace\relax }}{19}{figure.caption.17}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces ICSP\relax }}{19}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Řízení modelu\relax }}{21}{figure.caption.18}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Regulace modelu\relax }}{22}{figure.caption.19}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Navrhované schéma modelu\relax }}{23}{figure.caption.20}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces První obrazovka aplikace\relax }}{23}{figure.caption.21}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Port potenciometrů\relax }}{25}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Formát příkazu\relax }}{26}{figure.caption.23}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Schéma zapojení komponentů\relax }}{27}{figure.caption.24}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Sestavený model ruky\relax }}{28}{figure.caption.25}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Rukavice\relax }}{28}{figure.caption.26}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Připojení senzoru ohybu\relax }}{29}{figure.caption.27}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Schéma zapojení rukavice\relax }}{30}{figure.caption.29}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Program pro hlavní řídicí jednotku robotické ruky\relax }}{32}{figure.caption.30}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Formát příkazu\relax }}{33}{figure.caption.31}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Formát příkazu\relax }}{34}{figure.caption.32}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Obrazovka ovládání přes rukavice\relax }}{36}{figure.caption.34}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Obrazovka manuálního ovládání\relax }}{37}{figure.caption.35}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Obrazovka přednastavených stavu\relax }}{38}{figure.caption.36}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Výstupy servomotorů\relax }}{45}{figure.caption.40}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Připojení desek\relax }}{46}{figure.caption.41}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Připojení robotické ruky\relax }}{47}{figure.caption.42}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}

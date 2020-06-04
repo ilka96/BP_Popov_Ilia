@@ -1,0 +1,25 @@
+digraph "write_to_device"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node69 [label="write_to_device",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node69 -> Node70 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node70 [label="resend_data_between\l_device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8h.html#ab6fb649591002c4bca9f6375c8917039",tooltip="Resends data between 2 devices. "];
+  Node69 -> Node71 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node71 [label="send_states_to_hand",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$Hand_8h.html#a4ff7c3b312c4dde8ddb3a6ddf744381e",tooltip="Sends servo target positions to hand. "];
+  Node71 -> Node72 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node72 [label="resend_data_from_glove",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$main_8c.html#a001a1c13994c5a22528f1f7573a6616f",tooltip="Resends data from glove controller to robotic hand. "];
+  Node71 -> Node74 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node74 [label="on_btn_send_win_send\l_to_hand_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a8ce9ace29604f2c8cfc8c11622db5762",tooltip="Sends target servo positions to hand. "];
+  Node71 -> Node75 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node75 [label="on_btn_stand_win_grip\l_1_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#aaf936de80ae7ad92fb4a47dab0b89b81",tooltip="Sends command to hand (Palm grop v1) "];
+  Node71 -> Node76 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node76 [label="on_btn_stand_win_grip\l_2_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a488ef44efb5f4416f4afb57eedec7d52",tooltip="Sends command to hand (Palm grop v2) "];
+  Node71 -> Node77 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node77 [label="on_btn_stand_win_grip\l_3_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a7655745efed33380438d2c7375cbaa35",tooltip="Sends command to hand (Finger grip) "];
+  Node69 -> Node84 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node84 [label="open_hand",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$Hand_8h.html#a110b928712a174cde5634206f3ce4563",tooltip="Sends command to open hand. "];
+  Node69 -> Node86 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node86 [label="close_hand",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$Hand_8h.html#aef75168fde51b0fea4d46e60af099e23",tooltip="Sends command to close hand. "];
+}

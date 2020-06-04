@@ -1,0 +1,17 @@
+digraph "on_btn_glove_win_read_glove_clicked"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node48 [label="on_btn_glove_win_read\l_glove_clicked",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node48 -> Node49 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node49 [label="read_and_display_data\l_from_glove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#af097ecc2dc18e3f70eeb8c0e2ffe0aab",tooltip="Read fingers positions from glove. "];
+  Node49 -> Node50 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node50 [label="read_glove_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8c.html#a42c20d64e47e4b17689304c8241fd666",tooltip="Reads actual fingers positions from glove controller. "];
+  Node50 -> Node51 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node51 [label="read_from_device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8c.html#aa3b99a67181923f3d668d7f2537251d9",tooltip="Reads data from connected device via serial line. "];
+  Node49 -> Node52 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node52 [label="change_glove_screen\l_labels",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a8c83b7d0bfd54e2ce811e3bdd8b2a1aa",tooltip="Display fingers positions from glove. "];
+  Node52 -> Node53 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node53 [label="is_comma",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#afeff434e2b57b8479a10ab6b0d83e8a2"];
+}

@@ -1,0 +1,11 @@
+digraph "resend_data_between_device"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node43 [label="resend_data_between\l_device",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node43 -> Node44 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node44 [label="read_from_device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8c.html#aa3b99a67181923f3d668d7f2537251d9",tooltip="Reads data from connected device via serial line. "];
+  Node43 -> Node45 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node45 [label="write_to_device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8c.html#a978772edaba730e028fd8419ee463264",tooltip="Send data to device. "];
+}

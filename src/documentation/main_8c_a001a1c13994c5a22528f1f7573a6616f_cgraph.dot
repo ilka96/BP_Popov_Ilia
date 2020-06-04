@@ -1,0 +1,19 @@
+digraph "resend_data_from_glove"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node169 [label="resend_data_from_glove",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node169 -> Node170 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node170 [label="read_glove_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8c.html#a42c20d64e47e4b17689304c8241fd666",tooltip="Reads actual fingers positions from glove controller. "];
+  Node170 -> Node171 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node171 [label="read_from_device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8c.html#aa3b99a67181923f3d668d7f2537251d9",tooltip="Reads data from connected device via serial line. "];
+  Node169 -> Node172 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node172 [label="change_glove_screen\l_labels",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a8c83b7d0bfd54e2ce811e3bdd8b2a1aa",tooltip="Display fingers positions from glove. "];
+  Node172 -> Node173 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node173 [label="is_comma",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#afeff434e2b57b8479a10ab6b0d83e8a2"];
+  Node169 -> Node174 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node174 [label="send_states_to_hand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8c.html#a4ff7c3b312c4dde8ddb3a6ddf744381e",tooltip="Sends servo target positions to hand. "];
+  Node174 -> Node175 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node175 [label="write_to_device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8c.html#a978772edaba730e028fd8419ee463264",tooltip="Send data to device. "];
+}

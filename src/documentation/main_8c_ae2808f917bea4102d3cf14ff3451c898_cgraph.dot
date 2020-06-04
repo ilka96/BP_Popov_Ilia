@@ -1,0 +1,11 @@
+digraph "on_btn_stand_win_close_hand_clicked"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node78 [label="on_btn_stand_win_close\l_hand_clicked",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node78 -> Node79 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node79 [label="close_hand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8c.html#aef75168fde51b0fea4d46e60af099e23",tooltip="Sends command to close hand. "];
+  Node79 -> Node80 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node80 [label="write_to_device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8c.html#a978772edaba730e028fd8419ee463264",tooltip="Send data to device. "];
+}

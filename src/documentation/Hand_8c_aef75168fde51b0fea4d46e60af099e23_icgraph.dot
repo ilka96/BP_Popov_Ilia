@@ -1,0 +1,9 @@
+digraph "close_hand"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node4 [label="close_hand",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="on_btn_stand_win_close\l_hand_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#ae2808f917bea4102d3cf14ff3451c898",tooltip="Sends command to hand (Close hand) "];
+}

@@ -1,0 +1,17 @@
+digraph "is_comma"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node22 [label="is_comma",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node22 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="change_glove_screen\l_labels",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a8c83b7d0bfd54e2ce811e3bdd8b2a1aa",tooltip="Display fingers positions from glove. "];
+  Node23 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="resend_data_from_glove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a001a1c13994c5a22528f1f7573a6616f",tooltip="Resends data from glove controller to robotic hand. "];
+  Node24 -> Node25 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="on_btn_glove_win_start\l_resend_data_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a77674c6081bf8345eef8ecb37bc9dd9b",tooltip="Starts/stops resending data from glove to hand after cliking on button. "];
+  Node23 -> Node26 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 [label="read_and_display_data\l_from_glove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#af097ecc2dc18e3f70eeb8c0e2ffe0aab",tooltip="Read fingers positions from glove. "];
+  Node26 -> Node27 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="on_btn_glove_win_read\l_glove_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a99511eda2dbf3c756613536ee8a8383c",tooltip="Starts/stops reading data from glove after cliking on button. "];
+}

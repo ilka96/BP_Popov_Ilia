@@ -1,0 +1,25 @@
+digraph "read_from_device"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node25 [label="read_from_device",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node25 -> Node26 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 [label="read_glove_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8h.html#a42c20d64e47e4b17689304c8241fd666",tooltip="Reads actual fingers positions from glove controller. "];
+  Node26 -> Node27 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="resend_data_from_glove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a001a1c13994c5a22528f1f7573a6616f",tooltip="Resends data from glove controller to robotic hand. "];
+  Node27 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 [label="on_btn_glove_win_start\l_resend_data_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a77674c6081bf8345eef8ecb37bc9dd9b",tooltip="Starts/stops resending data from glove to hand after cliking on button. "];
+  Node26 -> Node29 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="read_and_display_data\l_from_glove",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$main_8c.html#af097ecc2dc18e3f70eeb8c0e2ffe0aab",tooltip="Read fingers positions from glove. "];
+  Node25 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="resend_data_between\l_device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8h.html#ab6fb649591002c4bca9f6375c8917039",tooltip="Resends data between 2 devices. "];
+  Node25 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="read_hand_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a4dcd2fee715efe4521a6e4ff95af2607",tooltip="Read servo positions from hand. "];
+  Node32 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 [label="on_btn_glove_win_conn\l_hand_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a98b4a252759b6f7e661d75fa84ed8ec3",tooltip="Robotic hand connection. "];
+  Node32 -> Node34 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node34 [label="on_btn_send_win_connect\l_hand_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a8da25fed190a74598d9453ef4cc4cf0f",tooltip="Robotic hand connection. "];
+  Node32 -> Node35 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node35 [label="on_btn_stand_win_connect\l_hand_clicked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#ad808ed650b1d4cb2aeda49eab3a2e896",tooltip="Robotic hand connection. "];
+}

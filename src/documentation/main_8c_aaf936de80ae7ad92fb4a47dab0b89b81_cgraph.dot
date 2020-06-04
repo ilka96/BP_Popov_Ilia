@@ -1,0 +1,11 @@
+digraph "on_btn_stand_win_grip_1_clicked"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node92 [label="on_btn_stand_win_grip\l_1_clicked",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node92 -> Node93 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node93 [label="send_states_to_hand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8c.html#a4ff7c3b312c4dde8ddb3a6ddf744381e",tooltip="Sends servo target positions to hand. "];
+  Node93 -> Node94 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node94 [label="write_to_device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Hand_8c.html#a978772edaba730e028fd8419ee463264",tooltip="Send data to device. "];
+}

@@ -1,0 +1,10 @@
+digraph "app_widgets"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{app_widgets\n|+ g_menu_window\l+ g_glove_window\l+ g_send_states_window\l+ g_stand_window\l+ g_ent_glove_win_txtIn\l+ g_lbl_glove_win_conn\l_state_glove\l+ g_lbl_glove_win_conn\l_state_hand\l+ g_lbl_glove_win_f\l+ g_lbl_glove_win_hand_data\l+ g_lbl_send_win_conn\l_state_hand\land 14 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +hand\n+glove" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{SArdDev\n|+ dev_addr\l+ conn_status\l+ readyForData\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structSArdDev.html",tooltip="Structure represents connected device. "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +term" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{SSerial\n|+ tio\l+ stdio\l+ old_stdio\l+ RTS_flag\l+ DTR_flag\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structSSerial.html",tooltip="Structure responsible for storing communication settings. "];
+}
