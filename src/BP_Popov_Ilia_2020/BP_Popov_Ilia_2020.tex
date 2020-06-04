@@ -182,7 +182,7 @@ Základem modelu je plastové pouzdro vyrobené ve tvaru lidské ruky. Ke každ�
 
 Tato podkapitola podrobně popisuje hlavní součásti projektu YouBionic Hand, jejich možnosti, vlastnosti a funkce v modelu. 
 
-Hlavní řídicí jednotkou projektu je Arduino Micro, které je k dispozici pro programování. Servomotory který provádí fyzické pohyby rukou jsou připojeny k hlavnímu ovladači. Servomotory jsou připojeny k Arduino prostřednictvím dvoumotorových budičů, které umožňují řídit servomotory. Všechny jednotky modelu jsou připojena k jedné desce, k dispozici je pouze port USB pro programování Arduino a několik výstupních pinů pro připojení externích senzorů. To znamená, že jakékoli změny v původním schématu budou vyžadovat pájení součástí a změny v pouzdru zařízení.
+Hlavní řídicí jednotkou projektu je Arduino Micro, které je k dispozici pro programování. Servomotory které provádí fyzické pohyby rukou jsou připojeny k hlavnímu ovladači. Servomotory jsou připojeny k Arduino prostřednictvím dvoumotorových budičů, které umožňují řídit servomotory. Všechny jednotky modelu jsou připojena k jedné desce, k dispozici je pouze port USB pro programování Arduino a několik výstupních pinů pro připojení externích senzorů. To znamená, že jakékoli změny v původním schématu budou vyžadovat pájení součástí a změny v pouzdru zařízení.
 
 
 \subsubsection{Arduino Micro}
@@ -440,11 +440,11 @@ Papír          & \begin{tabular}[c]{@{}l@{}}několikrát \\ složený \\ list p
 
 \chapter{Analýza a návrh}
 
-Tato kapitola je věnována analýze a vývoji řešení. V kapitola jsou popsané technologii zvolené pro dosažení cílů této prace a jsou navržené změny v modelu a řešení pro ovládání robotické ruky. Jsou navržena funkčnost aplikace pro demonstraci možnosti robotické ruky a uživatelské rozhraní této aplikace.
+Tato kapitola je věnována analýze a vývoji řešení. V kapitola jsou popsané technologie zvolené pro dosažení cílů této prace a jsou navržené změny v modelu a řešení pro ovládání robotické ruky. Jsou navržena funkčnost aplikace pro demonstraci možnosti robotické ruky a uživatelské rozhraní této aplikace.
 
 \section{Polohy prstů robotické ruky}
 
-Hlavním cílem práce je ovládání robotické ruky. Pro co nejpřesnější ovládání modelu potřebujeme vědět aktuální polohu všech prstů. Pro tyto účely, PQ12 pohony použité v modelu mají potenciometr zpětné vazby. Servopohony nemají vestavěný budiče a potenciometr zpětné vazby nebyl použit v původním modelu. Ze studie v teoretické části práce, dokumentaci pohonu, víme, že výstup potenciometru je umístěn na PIN1 servopohonu a je analogový signál. Můžeme tento signál připojit k Arduino a sledovat výstupní napětí potenciometrů. Výstupní napětí potenciometrů je úměrné poloze pohonu, ke kterému je připojeno. Poloha pohonu v modelu manipulátoru odpovídá poloze prstu, který řídí servomotor\cite{PotenPosit}.
+Hlavním cílem práce je ovládání robotické ruky. Pro co nejpřesnější ovládání modelu potřebujeme vědět aktuální polohu všech prstů. Pro tyto účely, PQ12 pohony použité v modelu mají potenciometr zpětné vazby. Servopohony nemají vestavěné budiče a potenciometr zpětné vazby nebyl použit v původním modelu. Ze studie v teoretické části práce, dokumentaci pohonu, víme, že výstup potenciometru je umístěn na PIN1 servopohonu a je analogový signál. Můžeme tento signál připojit k Arduino a sledovat výstupní napětí potenciometrů. Výstupní napětí potenciometrů je úměrné poloze pohonu, ke kterému je připojeno. Poloha pohonu v modelu manipulátoru odpovídá poloze prstu, který řídí servomotor\cite{PotenPosit}.
 
 
 Prvním praktickým úkolem práce je připojit zpětnou vazbu servopohonů k modelu, aby bylo možné řídit pohony v závislosti na jejich poloze. Robotická ruka má šest servopohonů, takže potřebujeme šest volných kontaktů na ovládací desce. Arduino Micro, který řídí model, neobsahuje dostatek volných pinů, které lze použít k připojení zpětné vazby z servopohonu. Zvolené řešení je přidat další ovládací prvek a nastavit spojení mezi původní deskou a deskou periferní. Toto řešení bylo zvoleno z několika důvodů:
@@ -770,6 +770,8 @@ Po zastavení všech servomotorů se program vrátí do původního stavu, kde �
 
 Pro jednoduchost použití a přehlednost v kódu aplikace byla realizována struktura \texttt{SFinger} \ref{code:structTFing}, která reprezentuje prst modelu robotické ruky v kódu aplikace. V každé instance této třídy jsou uloženy výstupní piny pro řízení servomotorů, číslo prstu, pozice, která má být dosažena a pro přesnost ovládání jsou uloženy dvě poslední změřené pozice servomotorů. 
 
+
+
 \begin{lstlisting}[caption={Reprezentace motoru},label={code:structTFing}]
 
 struct SFinger {
@@ -782,6 +784,8 @@ struct SFinger {
   };
   
 \end{lstlisting}
+
+\newpage
 
  \begin{figure}[H]
 \centering
@@ -798,6 +802,7 @@ Program pro externí desku, ke které jsou připojeny zpětné vazby servopohon�
 
 Při volání přerušení ze zařízení Master, řídicí jednotka odešle jednu z uložených hodnot polohy pohonu. Funkce \texttt{SPI.transfer()} z knihovny \texttt{SPI.h}, použitá na straně Master pro předávání dat, podporuje velikost dat 8 bitů. Proto jsou naměřené a následně odeslané hodnoty přiřazeny k rozsahu 0-255. Obrázek \ref{fig:ExtDeskProgDiag} ukazuje vývojový diagram implementovaného programu.
 
+\newpage
 
  \begin{figure}[H]
 \centering
@@ -817,6 +822,8 @@ Protože robotické rameno nastavuje šest motorů, má-li rukavice pouze pět s
 
 Obrázek \ref{fig:GloveProgDiagr} ukazuje vývojový diagram implementovaného programu.
 
+\newpage
+
  \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{./image/GloveProgDiagr.png}
@@ -834,6 +841,8 @@ Knihovna obsahuje funkci pro připojení k modelu robotické ruky a dalším za�
 
 
 Popis základních funkcí knihovny uveden v Tabulce \ref{tab:lib}. Podrobný popis struktur a funkci knihovny jsou uvedeny v přílohách.
+
+\newpage
 
 \begin{table}[H]
 \begin{tabular}{|l|l|}
@@ -859,6 +868,7 @@ Aplikace má tři základní obrazovky pro různé způsoby ovládání modelu a
 
 Všechny obrazovky obsahují pole pro zadání adresy zařízení a tlačítko připojení. Jakmile je model robotické ruky připojen, informace o stavu připojení a poloha prstů modelu budou viditelné na všech obrazovkách aplikace. Při zavření jakékoli obrazovky, program zničí všechny objekty, vrátí parametry změněné v aplikaci na výchozí nastavení a ukončí aplikaci.
 
+\newpage
 
 \subsection{Obrazovka ovládání přes rukavice}
 
@@ -953,7 +963,7 @@ Všechny aplikační funkce byly testovány a fungují podle definice. Při prop
 Cílem bakalářské práce bylo prozkoumat možnosti robotické ruky, a následně navrhnout a imlementovat programové vybavení pro ovládání. Implementace byla provedena na modelu YouBionic Hand. Dalším cílem bylo realizovát ovládání modelu pohybem lidské paže, vytvořit demo aplikaci a upřesnit rozsah předmetů, které této rukou lze uchopit.
 
 
-Při analýze vybraného modelu  byly zjištěny nedostatky v původním projektu. Nebylo nalezeno žádné již existující vhodné řešení pro ovládání této robotické ruky. Proto byly navrženy a implementovány změny v designu původního projektu YouBionic Hand. Do projektu byla přidána a naprogramovana externí periferní řídicí deska. Pro ovládání modelu byla napsána knihovna v jazyce C.
+Při analýze vybraného modelu  byly zjištěné nedostatky v původním projektu. Nebylo nalezeno žádné již existující vhodné řešení pro ovládání této robotické ruky. Proto byly navrženy a implementovány změny v designu původního projektu YouBionic Hand. Do projektu byla přidána a naprogramovana externí periferní řídicí deska. Pro ovládání modelu byla napsána knihovna v jazyce C.
 
 
 Pomocí senzorů ohybu a desky Arduino byl vytvořen ovladač ve tvaru rukavice. Také pro ovládání robotické ruky přes uživatelské rozhraní a spojení ruky s rukavici byla implementována aplikace. Součástí aplikace je několik základních způsobů uchopení objektů kopírujících chování lidské paže.
